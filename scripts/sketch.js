@@ -175,16 +175,14 @@ drawSprites()
               case 3:
                 break;
               case 4:
-                if(coinSprite){
-                  console.log("lolzzzzzzz")
-                }else{
+               
                   if(mine.x-100<=wall1.x)
                   coinSprite = createSprite(mine.x-100,mine.y,20,20)
                   coinSprite.addImage(coinImage);
                   coinSprite.velocityY = -3;
                   destroyGroup.add(coinSprite);
                   haha = true;
-                }
+                
                
                 
                 break;
@@ -209,9 +207,7 @@ drawSprites()
             case 1:
               break;
              case 2:
-              if(coinSprite){
-
-              }else{
+             
                 if(mine.x+100>=wall2.x){
                  
                   console.log("uWu shut up")
